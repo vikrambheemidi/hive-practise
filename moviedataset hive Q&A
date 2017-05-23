@@ -1,0 +1,14 @@
+1.find the no. movies between 1971 and 1996?
+--select moviename from movies where year between 1971 and 1996;
+
+2.find the no. movies greater than 3.9?
+--select moviename from movies where rating>3.9;
+
+3.find the no. movies with duration more than 9063?
+--select moviename from movies where duration>9063;
+
+4.find the list of years and number of movies released each year?
+--select year,count(moviename) from movies group by year;
+
+5.count the total no. movies int the list?
+--select movies from movies;

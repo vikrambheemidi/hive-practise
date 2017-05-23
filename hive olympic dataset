@@ -1,0 +1,23 @@
+1.total participants from each country?
+-->select count(name),country from olympic group by country;
+
+2.no. of countries participates in olympics?
+-->select count(distinct country) from olympic;
+
+3.total no. of games in olympic?
+-->select count(distinct activity) from olympic;
+
+4.no. of participants in each game?
+-->select activity,count(name) from olympic group by activity;
+
+5.no.activity held in each country?
+-->select country,count(activity) from olympic group by country;
+
+6.no.activity held in each year?
+-->select year,count(distinct activity) from olympic group by year;
+
+7.no. of activity having max attempts?
+-->select activity,max(totalatmp) from olympic group by activity;
+
+8.people who are participate in canada country?
+-->select name from olympic where country='canada';
